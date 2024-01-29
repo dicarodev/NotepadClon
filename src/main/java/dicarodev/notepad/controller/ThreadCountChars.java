@@ -22,13 +22,14 @@ public class ThreadCountChars extends Thread {
         while (true) {
             int chars = controller.countChars(textArea.getText());
 
-            // No funcionabien, esta leyenco todas la lineas continuamente
-            String[] lines = textArea.getText().split("\n");
 
-            for (String line : lines) {
-                int charsLine = controller.countChars(line) + 1;
+            // No funciona bien, esta en bucle contando los caracteres de todas las lineas
+            /*String[] lines = textArea.getText().split("\n");
+
+            for (int i = 0; i < lines.length; i++) {
+                int charsLine = controller.countChars(lines[i]) + 1;
                 lbl_columns.setText(charsLine + "Col");
-            }
+            }*/
 
             if (chars == 1) {
                 lbl_caracteres.setText(chars + " carácter.");
