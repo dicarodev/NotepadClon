@@ -14,19 +14,18 @@ public class View {
     private JMenuItem mi_openFile;
     private JMenuItem mi_save;
     private JMenuItem mi_saveAs;
-    private JMenu menu_edit;
     private JTextArea textArea;
-    private JLabel lbl_lines_columns;
+    private JLabel lbl_lines;
     private JLabel lbl_caracteres;
-    private JMenu menu_view;
     private JRadioButton rb_dark;
     private JRadioButton rb_light;
+    private JLabel lbl_columns;
     private final Controller controller;
 
     public View(){
         controller = new Controller();
 
-        ThreadCountChars countChars = new ThreadCountChars(controller, textArea, lbl_caracteres);
+        ThreadCountChars countChars = new ThreadCountChars(controller, textArea, lbl_caracteres, lbl_columns);
         countChars.start();
 
         mi_openFile.addActionListener(new ActionListener() {

@@ -46,24 +46,6 @@
               </component>
             </children>
           </grid>
-          <grid id="8a176" class="javax.swing.JMenu" binding="menu_view" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="0" left="0" bottom="0" right="0"/>
-            <constraints/>
-            <properties>
-              <text value="View"/>
-            </properties>
-            <border type="none"/>
-            <children/>
-          </grid>
-          <grid id="f0c75" class="javax.swing.JMenu" binding="menu_edit" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="0" left="0" bottom="0" right="0"/>
-            <constraints/>
-            <properties>
-              <text value="Edit"/>
-            </properties>
-            <border type="none"/>
-            <children/>
-          </grid>
           <component id="70e73" class="javax.swing.JRadioButton" binding="rb_dark">
             <constraints/>
             <properties>
@@ -101,7 +83,7 @@
           </component>
         </children>
       </scrollpane>
-      <grid id="4cb59" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="4cb59" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -109,20 +91,28 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="9ca3" class="javax.swing.JLabel" binding="lbl_lines_columns">
+          <component id="9ca3" class="javax.swing.JLabel" binding="lbl_lines">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value="1 Ln"/>
             </properties>
           </component>
           <component id="e6810" class="javax.swing.JLabel" binding="lbl_caracteres">
             <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <text value="0 carateres."/>
+            </properties>
+          </component>
+          <component id="dc42d" class="javax.swing.JLabel" binding="lbl_columns">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="1 Col"/>
             </properties>
           </component>
         </children>
