@@ -113,7 +113,7 @@ public class Controller {
     }
 
     public int countChars(String text){
-        return text.length();
+        return text ==  null ? 0 : text.length();
     }
 
     public void changeTheme(JPanel panel, JRadioButton radioButton){

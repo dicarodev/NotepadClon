@@ -25,7 +25,7 @@ public class View {
     public View(){
         controller = new Controller();
 
-        ThreadCountChars countChars = new ThreadCountChars(controller, textArea, lbl_caracteres, lbl_columns);
+        ThreadCountChars countChars = new ThreadCountChars(controller, textArea, lbl_caracteres, lbl_columns, lbl_lines);
         countChars.start();
 
         mi_openFile.addActionListener(new ActionListener() {
